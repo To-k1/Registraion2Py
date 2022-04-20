@@ -2,7 +2,7 @@
 
 #include <boost/python.hpp>
 #include <iostream>
-#include "Registrating.h"
+#include "Registrator.h"
 
 
 
@@ -16,10 +16,10 @@ BOOST_PYTHON_MODULE(registration_py)
 		.def("isPaused", &Registrator::isPaused)
 		.def("worker_pause", &Registrator::worker_pause)
 		.def("worker_resume", &Registrator::worker_resume)
-		.def("registrating", &Registrator::registrating)
-		.def("handleResults", &Registrator::handleResults)
-		.def("handlePause", &Registrator::handlePause)
-		.def("sendProcess", &Registrator::sendProcess);
+		.def("Registrating", &Registrator::Registrating)
+		.def("HandleResults", &Registrator::HandleResults)
+		.def("HandlePause", &Registrator::HandlePause)
+		.def("SendProcess", &Registrator::SendProcess);
 	//.def("print", &Message::get); //不可以使用print这种关键字作为导出函数名
 }
 
